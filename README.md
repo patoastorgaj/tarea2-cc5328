@@ -315,10 +315,7 @@ El script muestra la distribución de periodos entre paquetes consecutivos, comp
 ##### Prueba 1: Lecturas reales
 ![prueba 1](/capturas/prueba1.png)
 
-
-
-
-### 8.4 Siete combinaciones de variables
+##### Prueba 2: Siete Combinaciones
 
 | T | H | P | Campos recibidos en `sample` | OK |
 |---|---|---|------------------------------|----|
@@ -332,6 +329,44 @@ El script muestra la distribución de periodos entre paquetes consecutivos, comp
 
 La selección vacía se impide en la GUI (botón desactivado) y, si se envía a mano, el ESP32 responde `invalid_value` en `variables`.
 
+![prueba 2_1](/capturas/prueba2_1.png)
+![prueba 2_2](/capturas/prueba2_2.png)
+![prueba 2_3](/capturas/prueba2_3.png)
+![prueba 2_4](/capturas/prueba2_4.png)
+![prueba 2_5](/capturas/prueba2_5.png)
+![prueba 2_6](/capturas/prueba2_6.png)
+![prueba 2_7](/capturas/prueba2_7.png)
+
+##### Prueba 3: Cambio de frecuencia
+![prueba 3](/capturas/prueba3.png)
+
+##### Prueba 4: Ventana Incompleta
+![prueba 4](/capturas/prueba4.png)
+
+##### Prueba 5: Picos
+![prueba 5](/capturas/prueba5.png)
+
+##### Prueba 6: T° Oculta
+![prueba 6](/capturas/prueba6.png)
+
+##### Prueba 7a: Comando inválido
+![prueba 7a](/capturas/prueba7.png)
+
+##### Prueba 7b: Desconexión
+![prueba 7b1](/capturas/prueba7b_1.png)
+![prueba 7b2](/capturas/prueba7b_2.png)
+
+
 ## 9. Capturas
 
-_Agregar: foto del montaje BME688–ESP32, GUI con las tres variables, GUI con T oculta mostrando promedio y picos, rechazo de comando inválido._
+### Montaje BME688–ESP32:
+![montaje](/capturas/montaje.jpeg)
+
+### GUI mostrando 3 variables:
+![GUI](/capturas/GUI.png)
+
+### GUI con T oculta mostrando promedio y picos:
+![GUI](/capturas/GUI_t_oculta.png)
+
+### GUI con rechazo de comando inválido:
+![GUI](/capturas/GUI_comando_invalido.png)
