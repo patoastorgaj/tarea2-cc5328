@@ -80,8 +80,6 @@ requirements.txt
 - Se activan los pull-up internos del ESP32. La mayoría de los módulos ya trae resistencias de pull-up; si el cable es largo conviene que las tenga.
 - Bus I2C a 100 kHz (configurable).
 
-_Completar: modelo exacto de placa y módulo usados, y foto del montaje en la sección 9._
-
 ## 4. Firmware ESP32
 
 ### Requisitos
