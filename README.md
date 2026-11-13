@@ -315,7 +315,9 @@ _Completar con los resultados obtenidos con el montaje real._
 
 #### Prueba 1: Lectura reales
 Procedimiento: T, H y P seleccionadas a 1 Hz
+
 Resultado esperado: valores plausibles con unidades
+
 Resultado obtenido:
 ![prueba 1](/capturas/prueba1.png)
 
