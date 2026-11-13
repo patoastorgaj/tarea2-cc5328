@@ -300,26 +300,21 @@ El script muestra la distribución de periodos entre paquetes consecutivos, comp
 
 ### 8.3 Pruebas experimentales
 
-_Completar con los resultados obtenidos con el montaje real._
+| # | Prueba | Procedimiento | Resultado esperado |
+|---|--------|---------------|--------------------|
+| 1 | Lecturas reales | T, H y P seleccionadas a 1 Hz | valores plausibles con unidades |
+| 2 | Siete combinaciones | enviar cada combinación y revisar los campos del `sample` | solo llegan las variables marcadas |
+| 3 | Cambio de frecuencia | 1 Hz → 5 Hz sin reiniciar; CSV + `verificar_log.py` | periodos de ~1000 ms y luego ~200 ms, `seq` sin saltos |
+| 4 | Ventana Incompleta | W de 5 s → 30 s | error máximo ≤ 0,006 °C; ventana incompleta antes de cumplir 30 s |
+| 5 | Picos | θ cerca de la T ambiente; calentar suavemente con la mano/aliento | un solo evento por subida; autotest OK |
+| 6 | T oculta | seleccionar solo H y P con promedio y picos activos | siguen llegando `temp_avg_c` y `peak` |
+| 7a | Comando inválido | botón "Enviar config inválida" (`sampling_hz: 3`) | `error` con campo `sampling_hz`; la config confirmada no cambia |
+| 7b | Desconexión | desenchufar el USB y volver a conectarlo | la GUI avisa, reintenta, reconecta y reenvía la config |
 
-| # | Prueba | Procedimiento | Resultado esperado | Resultado obtenido |
-|---|--------|---------------|--------------------|--------------------|
-| 1 | Lecturas reales | T, H y P seleccionadas a 1 Hz | valores plausibles con unidades | |
-| 2 | Siete combinaciones | enviar cada combinación y revisar los campos del `sample` | solo llegan las variables marcadas | ver tabla 8.4 |
-| 3 | Cambio de frecuencia | 1 Hz → 5 Hz sin reiniciar; CSV + `verificar_log.py` | periodos de ~1000 ms y luego ~200 ms, `seq` sin saltos | |
-| 4 | Promedio | W de 5 s → 30 s; CSV + `verificar_log.py` | error máximo ≤ 0,006 °C; ventana incompleta hasta cumplir 30 s | |
-| 5 | Picos | θ cerca de la T ambiente; calentar suavemente con la mano/aliento | un solo evento por subida; autotest OK | |
-| 6 | T oculta | seleccionar solo H y P con promedio y picos activos | siguen llegando `temp_avg_c` y `peak` | |
-| 7a | Comando inválido | botón "Enviar config inválida" (`sampling_hz: 3`) | `error` con campo `sampling_hz`; la config confirmada no cambia | |
-| 7b | Desconexión | desenchufar el USB y volver a conectarlo | la GUI avisa, reintenta, reconecta y reenvía la config | |
-
-#### Prueba 1: Lectura reales
-Procedimiento: T, H y P seleccionadas a 1 Hz
-
-Resultado esperado: valores plausibles con unidades
-
-Resultado obtenido:
+#### Resultados
+##### Prueba 1: Lecturas reales
 ![prueba 1](/capturas/prueba1.png)
+
 
 
 
