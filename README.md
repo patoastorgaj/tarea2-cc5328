@@ -2,7 +2,7 @@
 
 CC5328-1 Sistemas Embebidos y Sensores, Universidad de Chile, semestre 2026-2.
 
-**Integrantes:** _completar_
+**Integrantes:** Pablo Carrasco, Patricio Astorga
 
 **Video de demostración:** _completar con el enlace directo, o ver `video_demostracion.mp4`_
 
