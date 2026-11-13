@@ -329,12 +329,19 @@ El script muestra la distribución de periodos entre paquetes consecutivos, comp
 
 La selección vacía se impide en la GUI (botón desactivado) y, si se envía a mano, el ESP32 responde `invalid_value` en `variables`.
 
+T:
 ![prueba 2_1](/capturas/prueba2_1.png)
+H:
 ![prueba 2_2](/capturas/prueba2_2.png)
+P:
 ![prueba 2_3](/capturas/prueba2_3.png)
+T, H:
 ![prueba 2_4](/capturas/prueba2_4.png)
+T, P:
 ![prueba 2_5](/capturas/prueba2_5.png)
+H, P:
 ![prueba 2_6](/capturas/prueba2_6.png)
+T, H, P:
 ![prueba 2_7](/capturas/prueba2_7.png)
 
 ##### Prueba 3: Cambio de frecuencia
