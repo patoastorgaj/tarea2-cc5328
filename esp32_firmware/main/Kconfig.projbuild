@@ -1,0 +1,19 @@
+menu "Tarea 2 - BME688"
+
+    config APP_I2C_SDA
+        int "GPIO SDA del BME688"
+        default 21
+
+    config APP_I2C_SCL
+        int "GPIO SCL del BME688"
+        default 22
+
+    config APP_I2C_FREQ_HZ
+        int "Frecuencia del bus I2C (Hz)"
+        default 100000
+
+    config APP_SERIAL_BAUD
+        int "Baudrate del protocolo serial"
+        default 115200
+
+endmenu
