@@ -67,7 +67,7 @@ requirements.txt
 
 ## 3. Montaje y conexión física
 
-| BME688   | ESP32_DevKitc_V4 (módulo ESP32-WROOM-32D | Nota                                   |
+| BME688   | ESP32_DevKitc_V4 (módulo ESP32-WROOM-32D) | Nota                                   |
 |----------|--------------|----------------------------------------|
 | VCC/VIN  | 3V3          | no usar 5 V si el módulo no tiene regulador |
 | GND      | GND          |                                        |
@@ -313,7 +313,12 @@ _Completar con los resultados obtenidos con el montaje real._
 | 7a | Comando inválido | botón "Enviar config inválida" (`sampling_hz: 3`) | `error` con campo `sampling_hz`; la config confirmada no cambia | |
 | 7b | Desconexión | desenchufar el USB y volver a conectarlo | la GUI avisa, reintenta, reconecta y reenvía la config | |
 
-Resultados:
+#### Prueba 1: Lectura reales
+Procedimiento: T, H y P seleccionadas a 1 Hz
+Resultado esperado: valores plausibles con unidades
+Resultado obtenido:
+![prueba 1](/capturas/prueba1.png)
+
 
 
 ### 8.4 Siete combinaciones de variables
